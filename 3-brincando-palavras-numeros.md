@@ -26,7 +26,7 @@ local meusDoces = 10
 print(meusDoces)  -- Mostra 10
 ```
 
-- `local meusDoces` guarda o número 10 localmente.  
+- `local meusDoces` guarda o número 10 numa variável.  
 - Números não precisam de aspas, só palavras (strings)!
 
 **Dica divertida:** Tente mudar o valor e veja o que acontece. Por exemplo, mude `meusDoces = 10` para `meusDoces = 20` e rode o código de novo. É como trocar o brinquedo na caixa!
@@ -49,7 +49,7 @@ print("Eu tenho " .. quantidade .. " doces de " .. nomeDoDoce)
 print("Tem mais? " .. tostring(temMais))  -- Mostra "true"
 ```
 
-- O `..` junta textos e números, como colar pedaços de papel.  
+- O `..` junta textos e números, como colar pedaços de papel. Isso se chama **concatenação**. 
 - `tostring()` transforma `true` em texto para mostrar.
 
 ### Lendo do Teclado: Fazendo o Computador Perguntar
@@ -70,7 +70,7 @@ print("Olá, " .. nome .. "! Que nome legal!")
 ```lua
 print("Quantos anos você tem?")
 local idadeTexto = io.read()
-local idade = tonumber(idadeTexto)  -- Transforma texto em número
+local idade = tonumber(idadeTexto)  -- Transforma texto em número, porque io.read() sempre lê como texto
 print("Você tem " .. idade .. " anos!")
 ```
 
