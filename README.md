@@ -1,2 +1,10 @@
-# aprendendo-linguagem-lua
-Um guia para quem quer aprender a programar com linguagem Lua. Recomendado até para crianças.
+# Guia de Introdução à Linguagem Lua para Crianças
+
+Um guia para crianças que querem aprender a programar em Lua. Recomendado para adultos também.
+
+## Introdução
+Este guia ensina a linguagem Lua de forma divertida e simples, com exemplos práticos e exercícios para crianças e iniciantes.
+
+## Seções Disponíveis
+- [Variáveis: Brincando com Palavras e Números](3-brincando-palavras-numeros.md)
+- [Condicionais: Tomando Decisões como um Detetive](4-tomando-decisoes-como-um-detetive.md)
