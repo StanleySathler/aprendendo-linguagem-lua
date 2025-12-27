@@ -52,10 +52,38 @@ print("Tem mais? " .. tostring(temMais))  -- Mostra "true"
 - O `..` junta textos e números, como colar pedaços de papel.  
 - `tostring()` transforma `true` em texto para mostrar.
 
+### Lendo do Teclado: Fazendo o Computador Perguntar
+
+Em Lua, você pode fazer o computador perguntar algo e guardar a resposta em uma variável. Usamos `io.read()` para ler do teclado.
+
+**Exemplo 4: Perguntando o nome**  
+```lua
+print("Qual é o seu nome?")
+local nome = io.read()
+print("Olá, " .. nome .. "! Que nome legal!")
+```
+
+- `io.read()` espera você digitar e apertar Enter.  
+- O que você digita vai para a variável `nome`.
+
+**Exemplo 5: Perguntando um número**  
+```lua
+print("Quantos anos você tem?")
+local idadeTexto = io.read()
+local idade = tonumber(idadeTexto)  -- Transforma texto em número
+print("Você tem " .. idade .. " anos!")
+```
+
+- `tonumber()` muda texto para número, porque `io.read()` sempre lê como texto.
+
+**Dica:** Teste digitando coisas diferentes. É como conversar com o computador!
+
 **Exercício para você:**  
 1. Crie uma variável com o seu nome e mostre na tela.  
 2. Guarde quantos anos você tem e imprima uma frase como "Eu tenho X anos!".  
-3. Faça uma variável `gostoDePizza = true` e mostre se você gosta ou não.
+3. Faça uma variável `gostoDePizza = true` e mostre se você gosta ou não.  
+4. Use `io.read()` para perguntar o nome de um amigo e dizer "Oi, [nome]!".  
+5. Pergunte quantos doces alguém tem e mostre uma mensagem legal.
 
 Se der erro, não se preocupe! É normal no começo. Verifique se as aspas estão certas e se não esqueceu o `=`.
 
