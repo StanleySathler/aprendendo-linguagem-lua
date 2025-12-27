@@ -12,12 +12,12 @@ Uma variável é como uma caixa onde você guarda um valor. Você dá um nome à
 
 **Exemplo 1: Guardando um nome (palavra)**  
 ```lua
-local meuNome = "João"
-print(meuNome)  -- Isso mostra "João" na tela
+local meuNome = "Oliver"
+print(meuNome)  -- Isso mostra "Oliver" na tela
 ```
 
 - `local meuNome` cria uma caixa local chamada `meuNome`.  
-- `"João"` é o que está dentro (uma palavra, chamada de *string*).  
+- `"Oliver"` é o que está dentro (uma palavra, chamada de *string*).  
 - `print()` é como dizer ao computador: "Mostre isso na tela!"
 
 **Exemplo 2: Guardando um número**  
