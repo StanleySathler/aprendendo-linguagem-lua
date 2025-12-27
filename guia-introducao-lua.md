@@ -8,25 +8,25 @@ Vamos aprender passo a passo, com exemplos divertidos. Abra o seu editor de cód
 
 ### Variáveis: Caixas para Guardar Segredos
 
-Uma variável é como uma caixa onde você guarda um valor. Você dá um nome à caixa e coloca algo dentro dela. Em Lua, usamos o sinal `=` para "guardar" o valor.
+Uma variável é como uma caixa onde você guarda um valor. Você dá um nome à caixa e coloca algo dentro dela. Em Lua, usamos o sinal `=` para "guardar" o valor. Para variáveis locais (que só existem no seu pedaço de código), é bom usar a palavra `local` no começo. Sem ela, a variável fica global (visível em todo o programa).
 
 **Exemplo 1: Guardando um nome (palavra)**  
 ```lua
-meuNome = "João"
+local meuNome = "João"
 print(meuNome)  -- Isso mostra "João" na tela
 ```
 
-- `meuNome` é o nome da caixa (variável).  
+- `local meuNome` cria uma caixa local chamada `meuNome`.  
 - `"João"` é o que está dentro (uma palavra, chamada de *string*).  
 - `print()` é como dizer ao computador: "Mostre isso na tela!"
 
 **Exemplo 2: Guardando um número**  
 ```lua
-meusDoces = 10
+local meusDoces = 10
 print(meusDoces)  -- Mostra 10
 ```
 
-- `meusDoces` guarda o número 10.  
+- `local meusDoces` guarda o número 10 localmente.  
 - Números não precisam de aspas, só palavras!
 
 **Dica divertida:** Tente mudar o valor e veja o que acontece. Por exemplo, mude `meusDoces = 10` para `meusDoces = 20` e rode o código de novo. É como trocar o brinquedo na caixa!
@@ -41,9 +41,9 @@ Em Lua, os valores têm "tipos", como categorias de brinquedos. Os principais s�
 
 **Exemplo 3: Contando doces com tipos diferentes**  
 ```lua
-nomeDoDoce = "Chocolate"  -- Texto
-quantidade = 5            -- Número
-temMais = true            -- Verdadeiro/Falso
+local nomeDoDoce = "Chocolate"  -- Texto
+local quantidade = 5            -- Número
+local temMais = true            -- Verdadeiro/Falso
 
 print("Eu tenho " .. quantidade .. " doces de " .. nomeDoDoce)
 print("Tem mais? " .. tostring(temMais))  -- Mostra "true"
