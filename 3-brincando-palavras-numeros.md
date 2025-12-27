@@ -27,7 +27,7 @@ print(meusDoces)  -- Mostra 10
 ```
 
 - `local meusDoces` guarda o número 10 localmente.  
-- Números não precisam de aspas, só palavras!
+- Números não precisam de aspas, só palavras (strings)!
 
 **Dica divertida:** Tente mudar o valor e veja o que acontece. Por exemplo, mude `meusDoces = 10` para `meusDoces = 20` e rode o código de novo. É como trocar o brinquedo na caixa!
 
