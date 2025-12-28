@@ -1,84 +1,79 @@
 # Guia de Introdução à Linguagem Lua para Crianças
 
-## (4) Tomando Decisões como um Detetive
+## Condicionais
 
-Olá, detetive em treinamento! Agora que você sabe guardar palavras e números em variáveis, vamos aprender a tomar decisões. Imagine que você é um detetive resolvendo um mistério: "Se isso acontecer, então faça aquilo. Senão, faça outra coisa." Em Lua, usamos `if`, `then` e `else` para isso. Também comparamos coisas com sinais como `==` (igual), `>` (maior) e `<` (menor).
+- if = se
+- then = então
+- else = senão
 
-Vamos ver exemplos divertidos. Lembre-se de testar o código!
+### If (Se) .. then (Então)
 
-### Condições: Se... Então... Senão
+Na programação, é comum você só executar um pedaço de código se uma condição for verdadeira.
 
-Uma condição é como uma pergunta: "Será que...?" Se a resposta for sim, faz uma coisa. Se não, faz outra.
+Por exemplo - Em um jogo, se o jogador tiver 100 moedas, ele pode comprar uma espada.
 
-**Exemplo 1: Verificando se você é grande o suficiente para um brinquedo**  
+Outro exemplo - Se o jogador digitar a senha certa, ele pode entrar na conta.
+
+Use `if` para decisões.
+
 ```lua
-local minhaIdade = 12
-
-if minhaIdade >= 10 then
-    print("Você pode brincar com o brinquedo grande!")
-else
-    print("Melhor escolher um brinquedo pequeno.")
+local idade = 18
+if idade >= 18 then -- Se idade é maior ou igual a 18
+    print("Você é adulto")
 end
 ```
 
-- `if minhaIdade >= 10 then` pergunta: "Idade é maior ou igual a 10?"  
-- Se sim, mostra a primeira mensagem.  
-- `else` é o "senão": se não, mostra a segunda.  
-- `end` fecha a condição.
+Tudo que estiver entre `if` e `end` só executa se a condição for verdadeira.
 
-**Dica:** Mude `minhaIdade = 12` para `minhaIdade = 8` e veja o que acontece. É como escolher caminhos em uma aventura!
+### Else (Senão)
 
-### Comparações: Maior, Menor, Igual
+Você também pode usar `else` para fazer algo quando a condição for falsa.
 
-Usamos comparações para decidir. Elas sempre dão `true` (verdadeiro) ou `false` (falso).
+Por exemplo - Se o jogador tiver 100 moedas, ele pode comprar uma espada, senão, mostra uma mensagem dizendo "não há moedas suficientes".
 
-- `==` : Igual (ex: `5 == 5` é true)  
-- `>` : Maior que (ex: `10 > 5` é true)  
-- `<` : Menor que (ex: `3 < 7` é true)  
-- `>=` : Maior ou igual  
-- `<=` : Menor ou igual  
-- `~=` : Diferente (ex: `5 ~= 3` é true)
-
-**Exemplo 2: Jogo de adivinhação com números**  
 ```lua
-local numeroSecreto = 7
-local meuPalpite = 5
-
-if meuPalpite == numeroSecreto then
-    print("Acertou! Você é um gênio!")
-elseif meuPalpite > numeroSecreto then
-    print("Muito alto! Tente um número menor.")
+local moedas = 50
+if moedas >= 100 then -- Se moedas é maior ou igual a 100
+    print("Você comprou uma espada!")
 else
-    print("Muito baixo! Tente um número maior.")
+    print("Não há moedas suficientes. Você precisa de 100 moedas, mas só tem " .. tostring(moedas) .. " moedas")
 end
 ```
 
-- `if` verifica se é igual.  
-- `elseif` é outro "se" se o primeiro não for.  
-- `else` para o resto.  
+### Comparações
 
-**Exemplo 3: Decidindo com palavras**  
+- `a == b` : Se a é igual a b
+- `a > b` : Se a é maior que b
+- `a < b` : Se a é menor que b
+- `a >= b` : Se a é maior ou igual a b
+- `a <= b` : Se a é menor ou igual a b
+- `a ~= b` : Se a é diferente de b
+
+### Operadores lógicos
+
+- `nome == 'Oliver' or nome == 'Luna'` : Se o nome é Oliver ou Luna
+- `nome == 'Oliver' and senha == '1234'` : Se o nome é Oliver e a senha é 1234
+
+### Exemplos
+
+Checa se o usuário e senha estão corretos:
+
 ```lua
-local meuAnimalFavorito = "gato"
+print("Seu nome:")
+local nome = io.read()
 
-if meuAnimalFavorito == "cachorro" then
-    print("Au au! Vamos brincar de buscar a bolinha?")
-elseif meuAnimalFavorito == "gato" then
-    print("Miau! Prefiro dormir no sol.")
+print("Sua senha:")
+local senha = io.read()
+
+if nome == "Oliver" and senha == "1234" then
+    print("Acesso permitido")
 else
-    print("Que animal legal! Me conte mais sobre ele.")
+    print("Acesso negado")
 end
 ```
 
-- Compara palavras com `==`. Elas precisam ser iguais, incluindo maiúsculas/minúsculas.
+### Exercícios
 
-**Exercício para você:**  
-1. Crie uma variável com sua idade e use `if` para dizer se você gosta de doces ou não (invente uma regra!).  
-2. Faça um jogo: guarde um número secreto e compare com um palpite, mostrando dicas.  
-3. Experimente `~=` : Se o animal não for "gato", diga "Talvez seja um cachorro?".
+1. Crie um programa que pergunte a idade do usuário e diga se ele é menor de idade (menos de 18 anos) ou adulto (igual ou maior que 18 anos).
 
-Se der erro, confira os sinais: `==` tem dois iguais, e não esqueça o `end`!
-
-### Próximos Passos
-
-Incrível! Agora você toma decisões como um detetive. Na próxima seção, vamos repetir ações como um robô. Pratique e me chame se precisar de ajuda!
+2. Crie um programa que checa se o jogador tem moedas suficientes para comprar um item que custa 150 moedas. Se tiver, mostre "Compra realizada!", senão, mostre um erro.
