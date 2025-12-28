@@ -1,6 +1,6 @@
 # Guia de Introdução à Linguagem Lua para Crianças
 
-## (2) Variáveis e Tipos
+## Variáveis e Tipos
 
 Variáveis guardam valores. Use `local` para criar.
 

@@ -1,6 +1,6 @@
 # Guia de Introdução à Linguagem Lua para Crianças
 
-## (5) Condicionais
+## Condicionais
 
 Use `if`, `then`, `else` para decisões.
 

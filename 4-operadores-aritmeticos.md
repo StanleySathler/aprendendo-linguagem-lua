@@ -1,6 +1,6 @@
 # Guia de Introdução à Linguagem Lua para Crianças
 
-## (3) Operadores Aritméticos
+## Operadores Aritméticos
 
 Use operadores para calcular.
 
