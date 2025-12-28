@@ -21,6 +21,18 @@ print(a * b)  -- 50
 print(a / b)  -- 2
 ```
 
+Lendo dois números e mostrando a soma do resultado:
+
+```lua
+print("Digite o primeiro número:")
+local num1 = io.read()
+print("Digite o segundo número:")
+local num2 = io.read()
+
+local soma = num1 + num2
+print("A soma é: " .. soma)
+```
+
 ### Exercícios
 
 > Quando dizemos "Imprima", significa usar `print()` para mostrar o valor na tela.
