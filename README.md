@@ -15,3 +15,4 @@ Lua é usado em vários jogos, como Roblox e GTA V (FiveM). Aprender Lua pode se
 - [5 - Concatenação](5-concatenacao.md)
 - [6 - Condicionais](6-condicionais.md)
 - [7 - Exercício prático - Calculadora](7-calculadora.md)
+- [8 - Laços de Repetição](8-lacos-de-repeticao.md)
