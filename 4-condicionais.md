@@ -73,9 +73,10 @@ end
 - Compara palavras com `==`. Elas precisam ser iguais, incluindo maiúsculas/minúsculas.
 
 **Exercício para você:**  
-1. Crie uma variável com sua idade e use `if` para dizer se você gosta de doces ou não (invente uma regra!).  
-2. Faça um jogo: guarde um número secreto e compare com um palpite, mostrando dicas.  
-3. Experimente `~=` : Se o animal não for "gato", diga "Talvez seja um cachorro?".
+
+1. Crie um programa que pergunta sua idade e armazena numa variável. Se a idade for maior ou igual a 18, imprima "Você é adulto!", senão imprima "Você é jovem!".
+
+2. Crie um programa que pergunta seu nome e armazena numa variável. Se o nome for "Oliver", imprima "Acesso autorizado!", senão imprima "Acesso negado!".
 
 Se der erro, confira os sinais: `==` tem dois iguais, e não esqueça o `end`!
 
