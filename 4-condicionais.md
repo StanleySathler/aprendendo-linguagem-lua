@@ -1,6 +1,6 @@
 # Guia de Introdução à Linguagem Lua para Crianças
 
-## (4) Condicionais
+## Condicionais
 
 - if = se
 - then = então
