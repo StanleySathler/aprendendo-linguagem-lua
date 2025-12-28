@@ -19,7 +19,17 @@ Seu programa deve:
 
 ### Exemplo
 
-Digite num1: 10  
-Digite num2: 5  
-Digite operação: +  
-Resultado: 15
+Seu programa deve funcionar mais ou menos assim:
+
+- Digite num1: 10  
+- Digite num2: 5  
+- Digite operação: +  
+- Resultado: 15
+
+### Dicas
+
+Se estiver em dúvida, re-visite estes capítulos:
+
+- [Lendo do Teclado](3-lendo-do-teclado.md)
+- [Operadores Aritméticos](4-operadores-aritmeticos.md)
+- [Condicionais](6-condicionais.md)
